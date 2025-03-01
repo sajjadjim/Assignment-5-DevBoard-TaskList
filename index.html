@@ -17,6 +17,7 @@
         <title>DevBoard</title>
     </head>
     <body>
+        <!-- nav bar container  -->
         <nav class="container mx-auto">
             <div class="navbar bg-base-100 shadow-sm rounded-xl md:p-3 mt-3">
                 <div class="flex-1">
@@ -34,8 +35,9 @@
                         <div
                             class="flex px-4 py-2 rounded-full bg-[#F4F7FF] items-center"><input
                                 type="checkbox" checked="checked"
-                                class="checkbox border-indigo-600 bg-indigo-100 checked:bg-indigo-600 checked:text-white checked:border-indigo-600 " /><p
-                                class="text-[23px] font-bold ml-[10px]">27</p></div>
+                                class="checkbox border-indigo-600 bg-indigo-100 checked:bg-indigo-600 checked:text-white checked:border-indigo-600 " />
+                                <!-- total Task Completed  -->
+                                <p id="total-task"  class="text-[23px] font-bold ml-[10px]">23</p></div>
 
                     </div>
                     <div class="dropdown dropdown-end">
@@ -118,8 +120,8 @@
                              </div>
                          </div>
                          <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
-                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
-                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <button class="px-2 py-1 bg-white rounded-md">Meta</button>
+                            <p class="text-lg font-semibold my-3">Add new emoji 🤲</p>
                             <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                              <div class="flex justify-between mt-[20px]">
@@ -131,8 +133,8 @@
                              </div>
                          </div>
                          <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
-                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
-                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <button class="px-2 py-1 bg-white rounded-md">Google LLC</button>
+                            <p class="text-lg font-semibold my-3">Integrate OpenAI API  </p>
                             <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                              <div class="flex justify-between mt-[20px]">
@@ -144,8 +146,8 @@
                              </div>
                          </div>
                          <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
-                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
-                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <button class="px-2 py-1 bg-white rounded-md">Glassdoar</button>
+                            <p class="text-lg font-semibold my-3">Improve Job searching  </p>
                             <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                              <div class="flex justify-between mt-[20px]">
@@ -159,14 +161,14 @@
                     </div>
                 </div>
                 <!-- activities Log  -->
-                <div class="md:w-[850px] bg-slate-500 rounded-lg p-[24px] ml-5 text-center">
+                <div class="md:w-[850px] bg-white border-2 rounded-lg p-[24px] ml-5 text-center">
                  <div class="flex gap-4 justify-center "><img src="assets/activity.png" alt=""><p>Activity Log</p></div>
                  <button id="clear-history" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer mt-[15px]">Clear History</button>
                  <!-- activities container box show  -->
-                 <div>
-                    <p>
-
-                    </p>
+                 <div id="activity-container">
+                    <!-- <p class="bg-[#F4F7FF] rounded-lg p-3 mt-[20px] opacity-60">
+                        You have Complete The Task Add Dark Mode at 12:48:15 PM
+                    </p> -->
                  </div>
                 </div>
             </div>
@@ -174,5 +176,6 @@
 
         <script src="script file/date and time.js"></script>
         <script src="script file/troggole.js"></script>
+        <script src="script file/clear-btn.js"></script>
     </body>
 </html>
