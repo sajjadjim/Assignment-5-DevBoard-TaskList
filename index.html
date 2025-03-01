@@ -12,6 +12,8 @@
             src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <!-- css import file  -->
         <link rel="stylesheet" href="style.css">
+        <!-- font awesome icon  -->
+        <script src="https://kit.fontawesome.com/10a4595e8d.js" crossorigin="anonymous"></script>
         <title>DevBoard</title>
     </head>
     <body>
@@ -42,12 +44,12 @@
                 </div>
             </div>
         </nav>
-        <main class="container md:mx-auto md:mt-[20px] bg-white p-[24px]">
+        <main class="container md:mx-auto mx-0 md:mt-[20px] bg-white flex mb-[40px]">
             <!-- container box  -->
             <div>
                 <div>
                     <!-- Heading Part here  -->
-                    <div class="flex gap-10">
+                    <div class="flex gap-30">
                         <div
                             class="flex px-4 py-5 rounded-xl items-center gap-[20px] bg-[#F4F7FF]">
                             <div class="bg-white rounded-full p-[18px]"><input
@@ -60,7 +62,7 @@
                             </div>
                         </div>
                         <div
-                            class="flex px-4 py-5 rounded-xl items-center gap-[20px] bg-linear-65 from-indigo-500 to-blue-300 ">
+                            class="md:flex px-4 py-5 rounded-xl  items-center bg-linear-65 from-indigo-500 to-blue-300 ">
                             <div><img src="assets/board.png" alt=""></div>
                             <div class="mr-20"><p class="text-white text-xl">Discover Something <br>New Today! </p>
                             </div>
@@ -74,11 +76,103 @@
                         </div>
                         </div>
                     </div>
+                    <!-- Grid Part Here  -->
+                    <div class=" grid mt-[50px] grid-cols-3 gap-10">
+                        <!-- card ALL -->
+                        <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                           <button class="px-2 py-1 bg-white rounded-md">ShopEase</button>
+                           <p class="text-lg font-semibold my-3">Fix Mobile Button Issue</p>
+                           <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                            <div class="flex justify-between mt-[20px]">
+                                <p>
+                                    <span class="opacity-60">Deadline</span><br>
+                                    <span>21 March 2025</span>
+                                </p>
+                                <button id="btn-complete1" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                            <button class="px-2 py-1 bg-white rounded-md">CloudSync</button>
+                            <p class="text-lg font-semibold my-3">Add Dark Mode</p>
+                            <p class="opacity-70 bg-white p-[10px] rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                             <div class="flex justify-between mt-[20px]">
+                                 <p>
+                                     <span class="opacity-60">Deadline</span><br>
+                                     <span>21 March 2025</span>
+                                 </p>
+                                 <button id="btn-complete2" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                             </div>
+                         </div>
+                         <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
+                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                             <div class="flex justify-between mt-[20px]">
+                                 <p>
+                                     <span class="opacity-60">Deadline</span><br>
+                                     <span>21 March 2025</span>
+                                 </p>
+                                 <button id="btn-complete3" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                             </div>
+                         </div>
+                         <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
+                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                             <div class="flex justify-between mt-[20px]">
+                                 <p>
+                                     <span class="opacity-60">Deadline</span><br>
+                                     <span>21 March 2025</span>
+                                 </p>
+                                 <button id="btn-complete4" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                             </div>
+                         </div>
+                         <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
+                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                             <div class="flex justify-between mt-[20px]">
+                                 <p>
+                                     <span class="opacity-60">Deadline</span><br>
+                                     <span>21 March 2025</span>
+                                 </p>
+                                 <button id="btn-complete5" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                             </div>
+                         </div>
+                         <div class="bg-[#F4F7FF] p-[20px] rounded-xl">
+                            <button class="px-2 py-1 bg-white rounded-md">SwiftPay</button>
+                            <p class="text-lg font-semibold my-3">Optimize  Home page </p>
+                            <p class="opacity-70 bg-white p-[10px] rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                             <div class="flex justify-between mt-[20px]">
+                                 <p>
+                                     <span class="opacity-60">Deadline</span><br>
+                                     <span>21 March 2025</span>
+                                 </p>
+                                 <button id="btn-complete6" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer">Completed</button>
+                             </div>
+                         </div>
+                    </div>
                 </div>
-                <div></div>
+                <!-- activities Log  -->
+                <div class="md:w-[850px] bg-slate-500 rounded-lg p-[24px] ml-5 text-center">
+                 <div class="flex gap-4 justify-center "><img src="assets/activity.png" alt=""><p>Activity Log</p></div>
+                 <button id="clear-history" class="text-white bg-blue-700 px-5 py-2 rounded-lg cursor-pointer mt-[15px]">Clear History</button>
+                 <!-- activities container box show  -->
+                 <div>
+                    <p>
+
+                    </p>
+                 </div>
+                </div>
             </div>
         </main>
 
         <script src="script file/date and time.js"></script>
+        <script src="script file/troggole.js"></script>
     </body>
 </html>
