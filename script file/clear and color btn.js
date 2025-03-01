@@ -19,3 +19,9 @@ document.getElementById('theme-btn').addEventListener('click',function () {
     
 }
 );
+
+//  Question page click function 
+document.getElementById('question-answer').addEventListener('click' ,function(){
+    window.location.href="./question-answe.html"
+        // console.log('My name is Jim')
+     })
