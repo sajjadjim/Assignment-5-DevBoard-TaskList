@@ -287,6 +287,6 @@ function checkCompletion() {
   task_Complete++;
 
   if (task_Complete === 6) {
-    alert("All tasks are successfully completed!");
+    alert("All tasks are successfully completed! Congratulation🎉🎉");
   }
 }
