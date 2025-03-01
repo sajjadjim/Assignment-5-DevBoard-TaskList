@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tailwind css -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <!-- Daysi UI  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"
+            type="text/css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- css import file  -->
+        <link rel="stylesheet" href="style.css">
+        <title>DevBoard</title>
+    </head>
+    <body>
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100 shadow-sm rounded-xl md:p-3 mt-3">
+                <div class="flex-1">
+                    <div class="flex">
+                        <div><img class="h-[40px] w-[40px]"
+                                src="assets/logo.png" alt="web_logo"></div>
+                        <a
+                            class="text-center justify-center  text-[30px] ml-[5px]">Dev<span
+                                class="font-bold">Board</span></a>
+                    </div>
+                </div>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+
+                        <div
+                            class="flex px-4 py-2 rounded-full bg-[#F4F7FF] items-center"><input
+                                type="checkbox" checked="checked"
+                                class="checkbox border-indigo-600 bg-indigo-100 checked:bg-indigo-600 checked:text-white checked:border-indigo-600 " /><p
+                                class="text-[23px] font-bold ml-[10px]">27</p></div>
+
+                    </div>
+                    <div class="dropdown dropdown-end">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="container md:mx-auto md:mt-[20px] bg-white p-[24px]">
+            <!-- container box  -->
+            <div>
+                <div>
+                    <!-- Heading Part here  -->
+                    <div class="flex gap-10">
+                        <div
+                            class="flex px-4 py-5 rounded-xl items-center gap-[20px] bg-[#F4F7FF]">
+                            <div class="bg-white rounded-full p-[18px]"><input
+                                    type="checkbox" checked="checked"
+                                    class="checkbox border-indigo-600 bg-indigo-100 checked:bg-indigo-600 checked:text-white checked:border-indigo-600 "></div>
+                            <div><p class="text-[#00303C] opacity-70">Task
+                                    Assigned </p>
+                                    <!-- count number id here  -->
+                                <h2 id="count-number" class="font-bold text-2xl">06</h2>
+                            </div>
+                        </div>
+                        <div
+                            class="flex px-4 py-5 rounded-xl items-center gap-[20px] bg-linear-65 from-indigo-500 to-blue-300 ">
+                            <div><img src="assets/board.png" alt=""></div>
+                            <div class="mr-20"><p class="text-white text-xl">Discover Something <br>New Today! </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex px-4 py-5 rounded-xl items-center gap-[20px] bg-[#F4F7FF]">
+                            <div class="bg-white rounded-full p-[18px]"><img src="assets/calender.png" alt=""></div>
+                              <!-- date and time part here  -->
+                            <div class="w-[150px]"><p id="datetime" class="text-xl"></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </main>
+
+        <script src="script file/date and time.js"></script>
+    </body>
 </html>

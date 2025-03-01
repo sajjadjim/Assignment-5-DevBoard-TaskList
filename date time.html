@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+        }
+        .date {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Current Date & Time:</h2>
+    <p id="datetime"></p>
+
+    <script>
+        function updateDateTime() {
+            let now = new Date();
+
+            // Format date as "Jul 28 2025"
+            let options = { month: "short", day: "numeric", year: "numeric" };
+            let formattedDate = now.toLocaleDateString("en-US", options).replace(',', '');
+
+            let time = now.toLocaleTimeString();
+            document.getElementById("datetime").innerHTML = `<span class="date">${formattedDate}</span> ${time}`;
+        }
+
+        // Update time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display time immediately
+        updateDateTime();
+    </script>
+
+</body>
+</html>
