@@ -4,7 +4,7 @@ document.getElementById('clear-history').addEventListener('click', function(){
 
 // theme button working here 
 document.getElementById('theme-btn').addEventListener('click',function () {
-    const colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'pink' ,'brown' ,'aquamarine' ,'darkkhaki'];
+    const colors = ['red', 'green', 'blue', 'orange', 'purple', 'pink' ,'brown' ,'aquamarine' ,'darkkhaki'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.getElementById('random-color1').style.backgroundColor = randomColor;
     document.getElementById('random-color2').style.backgroundColor = randomColor;
